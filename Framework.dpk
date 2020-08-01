@@ -44,7 +44,7 @@ contains
   Base.Objects in 'Source\Base\Base.Objects.pas',
   Base.Objects.Types in 'Source\Base\Base.Objects.Types.pas',
   Base.Value in 'Source\Base\Base.Value.pas',
-  Configuration in 'Source\Config\Configuration.pas',  
+  Configuration in 'Source\Config\Configuration.pas',
   Database.CommandBuilder in 'Source\Database\Database.CommandBuilder.pas',
   Database.CommandBuilder.Types in 'Source\Database\Database.CommandBuilder.Types.pas',
   Database.Component in 'Source\Database\Database.Component.pas',
