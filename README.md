@@ -1,2 +1,2 @@
-# delphi-std-framework
+# delphi-framework
 Standard framework
