@@ -1,0 +1,80 @@
+package Framework;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  DbxCommonDriver,
+  dbrtl,
+  FireDAC,
+  FireDACCommonDriver,
+  FireDACCommon,
+  FireDACPgDriver,
+  dsnap;
+
+contains
+  Base.Argument in 'Source\Base.Argument.pas',
+  Base.Converter in 'Source\Base.Converter.pas',
+  Base.Lib in 'Source\Base.Lib.pas',
+  Base.Objects in 'Source\Base.Objects.pas',
+  Base.Objects.Types in 'Source\Base.Objects.Types.pas',
+  Base.Value in 'Source\Base.Value.pas',
+  Configuration in 'Source\Configuration.pas',
+  Database.CommandBuilder in 'Source\Database.CommandBuilder.pas',
+  Database.CommandBuilder.Types in 'Source\Database.CommandBuilder.Types.pas',
+  Database.Component in 'Source\Database.Component.pas',
+  Database.Component.Types in 'Source\Database.Component.Types.pas',
+  Database.Condition in 'Source\Database.Condition.pas',
+  Database.ConnectionInfo in 'Source\Database.ConnectionInfo.pas',
+  Database.Constraint in 'Source\Database.Constraint.pas',
+  Database.Drivers in 'Source\Database.Drivers.pas',
+  Database.Exceptions in 'Source\Database.Exceptions.pas',
+  Database.Field in 'Source\Database.Field.pas',
+  Database.Fieldset in 'Source\Database.Fieldset.pas',
+  Database.Functions in 'Source\Database.Functions.pas',
+  Database.Group in 'Source\Database.Group.pas',
+  Database.Join in 'Source\Database.Join.pas',
+  Database.Limit in 'Source\Database.Limit.pas',
+  Database.Order in 'Source\Database.Order.pas',
+  Database in 'Source\Database.pas',
+  Database.Query in 'Source\Database.Query.pas',
+  Database.Query.Types in 'Source\Database.Query.Types.pas',
+  Database.Table in 'Source\Database.Table.pas',
+  Entity in 'Source\Entity.pas',
+  Resource in 'Source\Resource.pas',
+  Service.Init.Charge in 'Source\Service.Init.Charge.pas',
+  Service.Init in 'Source\Service.Init.pas',
+  Service in 'Source\Service.pas',
+  Tools.Encryption in 'Source\Tools.Encryption.pas',
+  Tools.Json in 'Source\Tools.Json.pas',
+  Tools.Path in 'Source\Tools.Path.pas',
+  Validation.Email in 'Source\Validation.Email.pas',
+  Validation in 'Source\Validation.pas',
+  Validation.Rule in 'Source\Validation.Rule.pas';
+
+end.
